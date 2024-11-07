@@ -1,0 +1,77 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#parachute {
+    width: 270px;
+    height: 370px;
+    margin: 7em auto;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+
+.bottonesave {
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    border-radius: 45%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    top: 120px;
+    left: 720px;
+
+}
+
+.bottoni {
+    opacity: 0;
+    transition: opacity 1s;
+    margin: 100px;
+}
+
+.bottoni:hover {
+    opacity: 1;
+}
+
+.bottone1,
+.bottone2,
+.bottone3 {
+    position: absolute;
+    padding: 5px;
+    background-color: rgba(219, 243, 243, 0.87);
+
+}
+
+.bottone3 {
+    padding: 6px;
+    left: 540px;
+    top: 440px;
+    border-radius: 20%;
+}
+
+.bottone2 {
+    left: 740px;
+    top: 435px;
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.bottone1 {
+    left: 700px;
+    top: 435px;
+    border-radius: 50%;
+    padding: 9px;
+
+}
+
+#parachute:hover::before {
+    background: rgb(144, 140, 140);
+    background: linear-gradient(180deg, rgba(144, 140, 140, 0.26234243697478987) 0%, rgba(147, 140, 140, 0.4640231092436975) 0%);
+    position: absolute;
+    content: " ";
+    width: 270px;
+    height: 370px;
+    border-radius: 25px;
+}
